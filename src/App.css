@@ -179,6 +179,10 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+/*
+body {
+  height: 100%;
+}
 @media screen and (max-width: 975px) {
   .profile {
     font-size: var(--font-size-19xl);
@@ -237,3 +241,4 @@
     font-size: var(--font-size-10xl);
   }
 }
+*/
