@@ -1,51 +1,39 @@
-import "./FrameComponent.css";
+import styles from "./FrameComponent.css";
 
 const FrameComponent = () => {
     return (
-        <section className="frame-section">
-            <div className="menu-parent">
-                <div className="menu" />
-                <div className="user-friends-and-coins">
-                    <div className="duck-icon-user-friends">
-                        <div className="coins-and-flash">
+        <section className={styles.mainInner}>
+            <div className={styles.frameParent}>
+                <div className={styles.energyuWrapper}>
+                    <b className={styles.energyu}>🔋 1500/1500</b>
+                </div>
+                <div className={styles.menuParent}>
+                    <div className={styles.menu} />
+                    <div className={styles.frameGroup}>
+                        <div className={styles.iconUserFriendsWrapper}>
                             <img
-                                className="icon-user-friends"
-                                loading="lazy"
+                                className={styles.iconUserFriends}
                                 alt=""
-                                src="/public/-icon-user-friends.svg"
+                                src="/-icon-user-friends.svg"
                             />
                         </div>
-                        <b className="friends">Friends</b>
+                        <b className={styles.friends}>Friends</b>
                     </div>
-                </div>
-                <div className="line-wrapper">
-                    <div className="frame-item" />
-                </div>
-                <div className="user-friends-and-coins1">
-                    <div className="frame-group">
-                        <div className="icon-coins-wrapper">
-                            <img
-                                className="icon-coins"
-                                loading="lazy"
-                                alt=""
-                                src="/public/-icon-coins.svg"
-                            />
+                    <div className={styles.frameContainer}>
+                        <div className={styles.iconCoinsWrapper}>
+                            <img className={styles.iconCoins} alt="" src="/-icon-coins.svg" />
                         </div>
-                        <b className="missions">Missions</b>
+                        <b className={styles.missions}>Missions</b>
                     </div>
-                </div>
-                <div className="frame-inner" />
-                <div className="user-friends-and-coins2">
-                    <div className="frame-container">
-                        <div className="icon-flash-1-wrapper">
+                    <div className={styles.frameDiv}>
+                        <div className={styles.iconFlash1Wrapper}>
                             <img
-                                className="icon-flash-1"
-                                loading="lazy"
+                                className={styles.iconFlash1}
                                 alt=""
-                                src="/public/-icon-flash-1.svg"
+                                src="/-icon-flash-1.svg"
                             />
                         </div>
-                        <b className="boost">Boost</b>
+                        <b className={styles.boost}>Boost</b>
                     </div>
                 </div>
             </div>
