@@ -1,10 +1,11 @@
 import styles from "./FrameComponent1.module.css";
 
 const FrameComponent1 = () => {
+    const tg = window.Telegram.WebApp;
   return (
     <section className={styles.frameParent}>
       <div className={styles.profileParent}>
-        <b className={styles.profile}>👤 USERNAME</b>
+        <b className={styles.profile}>👤 {tg.initDataUnsafe?.user?.first_name}</b>
         <div className={styles.iconSoFaqWrapper}>
           <img className={styles.iconSoFaq} alt="" src="/-icon-so-faq.svg" />
         </div>

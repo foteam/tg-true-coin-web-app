@@ -1,6 +1,7 @@
 import styles from "./FrameComponent.module.css";
 
 const FrameComponent = () => {
+
   return (
     <section className={styles.mainInner}>
       <div className={styles.frameParent}>
