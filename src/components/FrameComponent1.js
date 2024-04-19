@@ -5,7 +5,7 @@ const FrameComponent1 = () => {
   return (
     <section className={styles.frameParent}>
       <div className={styles.profileParent}>
-        <b className={styles.profile}>👤 {tg.initDataUnsafe?.user?.first_name}</b>
+        <b className={styles.profile}>👤 {tg.initDataUnsafe.user.username}</b>
         <div className={styles.iconSoFaqWrapper}>
           <img className={styles.iconSoFaq} alt="" src="/-icon-so-faq.svg" />
         </div>
