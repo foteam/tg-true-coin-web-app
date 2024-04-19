@@ -222,17 +222,17 @@
   .profile {
     font-size: var(--font-size-10xl);
   }
-
   .mines {
     font-size: 30px;
   }
-
   .mines1 {
     font-size: 33px;
   }
-
   .t {
     font-size: 56px;
     line-height: 87px;
+  }
+  .energyu {
+    font-size: var(--font-size-10xl);
   }
 }

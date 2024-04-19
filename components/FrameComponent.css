@@ -1,0 +1,218 @@
+.icon-user-friends,
+.menu {
+    position: relative;
+    max-width: 100%;
+}
+.menu {
+    align-self: stretch;
+    width: 900px;
+    border-radius: var(--br-46xl);
+    background-color: var(--color-dimgray);
+    display: none;
+}
+.icon-user-friends {
+    height: 85.8px;
+    flex: 1;
+    overflow: hidden;
+    z-index: 1;
+}
+.coins-and-flash,
+.friends {
+    align-self: stretch;
+    display: flex;
+}
+.coins-and-flash {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-2xs) 0 var(--padding-3xs-9);
+}
+.friends {
+    height: 64px;
+    position: relative;
+    letter-spacing: -0.02em;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.duck-icon-user-friends,
+.user-friends-and-coins {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.duck-icon-user-friends {
+    align-self: stretch;
+    justify-content: flex-start;
+    gap: var(--gap-base-2);
+}
+.user-friends-and-coins {
+    width: 154px;
+    justify-content: flex-end;
+    padding: 0 var(--padding-3xs) var(--padding-mini) 0;
+    box-sizing: border-box;
+}
+.frame-item {
+    width: 1px;
+    flex: 1;
+    position: relative;
+    border-right: 1px solid var(--color-white);
+    box-sizing: border-box;
+    z-index: 1;
+}
+.line-wrapper {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-19xl) 0 0;
+    box-sizing: border-box;
+}
+.icon-coins {
+    height: 86.3px;
+    width: 86.3px;
+    position: relative;
+    z-index: 1;
+}
+.icon-coins-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-9xl-7) 0 var(--padding-10xl);
+}
+.frame-group,
+.missions {
+    align-self: stretch;
+    display: flex;
+}
+.missions {
+    height: 64px;
+    position: relative;
+    letter-spacing: -0.02em;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.frame-group {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-mini-7);
+}
+.user-friends-and-coins1 {
+    width: 183px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-20xl) var(--padding-mini) 0;
+    box-sizing: border-box;
+}
+.frame-inner {
+    height: 221px;
+    width: 1px;
+    position: relative;
+    border-right: 1px solid var(--color-white);
+    box-sizing: border-box;
+    z-index: 1;
+}
+.icon-flash-1 {
+    height: 86px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.icon-flash-1-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-21xl-4) 0 var(--padding-22xl);
+}
+.boost,
+.frame-container,
+.icon-flash-1-wrapper {
+    align-self: stretch;
+    display: flex;
+}
+.boost {
+    height: 64px;
+    position: relative;
+    letter-spacing: -0.02em;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.frame-container {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-mini);
+}
+.user-friends-and-coins2 {
+    width: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 var(--padding-mini);
+    box-sizing: border-box;
+}
+.frame-section,
+.menu-parent {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.menu-parent {
+    flex: 1;
+    border-radius: var(--br-46xl);
+    background-color: var(--color-dimgray);
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 var(--padding-53xl) 0 var(--padding-44xl);
+    gap: var(--gap-xl);
+}
+.frame-section {
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-31xl);
+    text-align: center;
+    font-size: var(--font-size-8xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+}
+@media screen and (max-width: 1000px) {
+    .frame-section {
+        padding-left: var(--padding-6xl);
+        padding-right: var(--padding-6xl);
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 975px) {
+    .frame-inner {
+        width: 100%;
+        height: 1px;
+    }
+    .menu-parent {
+        flex-wrap: wrap;
+        padding-left: var(--padding-12xl);
+        padding-right: var(--padding-17xl);
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 450px) {
+    .boost,
+    .friends,
+    .missions {
+        font-size: var(--font-size-3xl);
+    }
+}
