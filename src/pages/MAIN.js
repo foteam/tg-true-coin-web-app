@@ -12,7 +12,7 @@ const MAIN = () => {
       <FrameComponent1 />
       <section className={styles.mainInner}>
         <div className={styles.frameParent}>
-          <img className={styles.frameChild}  alt="" src="/group-1.svg"/>
+          <img onClick={onMining} className={styles.frameChild}  alt="" src="/group-1.svg"/>
           <b className={styles.t}>T</b>
         </div>
       </section>
