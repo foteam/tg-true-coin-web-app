@@ -10,7 +10,7 @@ function App() {
     }
   return (
     <div className="App">
-      TRUECOIN
+      YOUR NAME: {tg.initData.user.first_name}
         <button onClick={onClose}>Close</button>
     </div>
   );
