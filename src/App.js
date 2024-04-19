@@ -19,7 +19,7 @@ function App() {
                           className="icon-so-faq"
                           loading="lazy"
                           alt=""
-                          src="/public/-icon-so-faq.svg"
+                          src="../public/-icon-so-faq.svg"
                       />
                   </div>
               </div>
