@@ -19,7 +19,7 @@ function App() {
                           className="icon-so-faq"
                           loading="lazy"
                           alt=""
-                          src="/-icon-so-faq.svg"
+                          src="/public/-icon-so-faq.svg"
                       />
                   </div>
               </div>
@@ -36,7 +36,7 @@ function App() {
                       className="frame-child"
                       loading="lazy"
                       alt=""
-                      src="/group-1.svg"
+                      src="/public/group-1.svg"
                   />
                   <h1 className="t">T</h1>
               </div>

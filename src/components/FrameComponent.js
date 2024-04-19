@@ -12,7 +12,7 @@ const FrameComponent = () => {
                                 className="icon-user-friends"
                                 loading="lazy"
                                 alt=""
-                                src="/-icon-user-friends.svg"
+                                src="/public/-icon-user-friends.svg"
                             />
                         </div>
                         <b className="friends">Friends</b>
@@ -28,7 +28,7 @@ const FrameComponent = () => {
                                 className="icon-coins"
                                 loading="lazy"
                                 alt=""
-                                src="/-icon-coins.svg"
+                                src="/public/-icon-coins.svg"
                             />
                         </div>
                         <b className="missions">Missions</b>
@@ -42,7 +42,7 @@ const FrameComponent = () => {
                                 className="icon-flash-1"
                                 loading="lazy"
                                 alt=""
-                                src="/-icon-flash-1.svg"
+                                src="/public/-icon-flash-1.svg"
                             />
                         </div>
                         <b className="boost">Boost</b>
