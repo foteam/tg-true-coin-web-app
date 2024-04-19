@@ -12,7 +12,7 @@ function App() {
       <div className="main">
           <section className="main-inner">
               <div className="profile-parent">
-                  <h2 className="profile">👤 Sarvar</h2>
+                  <h2 className="profile">👤 {tg.initDataUnsafe?.user?.first_name}</h2>
                   <div className="question-mark-icon">
                       <img
                           className="icon-so-faq"
