@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;900&display=swap");
-body {
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
   margin: 0;
   line-height: normal;
-    height: 100%;
 }
