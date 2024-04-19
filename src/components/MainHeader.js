@@ -1,11 +1,12 @@
 import styles from "./FrameComponent1.module.css";
+import React from "react"
 
-const FrameComponent1 = () => {
+const MainHeader = () => {
     const tg = window.Telegram.WebApp;
   return (
     <section className={styles.frameParent}>
       <div className={styles.profileParent}>
-        <b className={styles.profile}>👤 {tg.initDataUnsafe.user.username}</b>
+        <b className={styles.profile}>👤 {tg.initDataUnsafe?.user.first_name}</b>
         <div className={styles.iconSoFaqWrapper}>
           <img className={styles.iconSoFaq} alt="" src="/-icon-so-faq.svg" />
         </div>
@@ -20,4 +21,4 @@ const FrameComponent1 = () => {
   );
 };
 
-export default FrameComponent1;
+export default MainHeader;

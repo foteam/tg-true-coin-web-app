@@ -1,5 +1,5 @@
-import FrameComponent1 from "../components/FrameComponent1";
-import FrameComponent from "../components/FrameComponent";
+import MainHeader from "../components/MainHeader";
+import MainFoot from "../components/MainFoot";
 import styles from "./MAIN.module.css";
 
 const onMining = () => {
@@ -9,14 +9,14 @@ const onMining = () => {
 const MAIN = () => {
   return (
     <div className={styles.main}>
-      <FrameComponent1 />
+      <MainHeader />
       <section className={styles.mainInner}>
         <div className={styles.frameParent}>
           <img onClick={onMining} className={styles.frameChild}  alt="" src="/group-1.svg"/>
           <b className={styles.t}>T</b>
         </div>
       </section>
-      <FrameComponent />
+      <MainFoot />
     </div>
   );
 };

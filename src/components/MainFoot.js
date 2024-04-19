@@ -1,6 +1,6 @@
 import styles from "./FrameComponent.module.css";
 
-const FrameComponent = () => {
+const MainHeader = () => {
 
   return (
     <section className={styles.mainInner}>
@@ -42,4 +42,4 @@ const FrameComponent = () => {
   );
 };
 
-export default FrameComponent;
+export default MainHeader;
