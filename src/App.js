@@ -1,5 +1,5 @@
 import './App.css';
-import FrameComponent from "../components/FrameComponent";
+import FrameComponent from "./components/FrameComponent";
 import {useEffect} from "react";
 const tg = window.Telegram.WebApp;
 function App() {
