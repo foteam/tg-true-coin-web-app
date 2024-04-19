@@ -3,7 +3,7 @@ import FrameComponent from "../components/FrameComponent";
 import styles from "./MAIN.module.css";
 
 const onMining = () => {
-    document.getElementById("coinsCount").innerText = "MINING!";
+    document.getElementById("coinsCount").innerText = parseInt(document.getElementById("coinsCount")) + 1;
 }
 
 const MAIN = () => {

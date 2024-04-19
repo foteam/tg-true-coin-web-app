@@ -14,7 +14,7 @@ const FrameComponent1 = () => {
         <div className={styles.minesWrapper}>
           <div className={styles.mines}>Your True Coins here:</div>
         </div>
-        <div className={styles.mines1} id="coinsCount">1 507 999</div>
+        <div className={styles.mines1} id="coinsCount">2 500</div>
       </div>
     </section>
   );
