@@ -3,7 +3,7 @@ import MainFoot from "../components/MainFoot";
 import styles from "./MAIN.module.css";
 
 const onMining = () => {
-    document.getElementById("coinsCount").innerText = parseInt(document.getElementById("coinsCount").innerText) + 1;
+    document.getElementById("coinsCount").innerText = parseInt(document.getElementById("coinsCount").innerHTML) + 1;
 }
 
 const MAIN = () => {
