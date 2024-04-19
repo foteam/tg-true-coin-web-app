@@ -38,7 +38,7 @@
   justify-content: flex-start;
   padding: 0 0.25rem 0 0.231rem;
 }
-.friendsButton,
+.frameGroup,
 .friends {
   flex-shrink: 0;
   display: flex;
@@ -53,7 +53,7 @@
   debug_commit: 1de1738;
   z-index: 1;
 }
-.friendsButton {
+.frameGroup {
   width: 3.319rem;
   flex-direction: column;
   align-items: flex-start;
@@ -87,7 +87,7 @@
   debug_commit: 1de1738;
   z-index: 1;
 }
-.missionsButton {
+.frameContainer {
   width: 3.319rem;
   flex-shrink: 0;
   display: flex;
@@ -112,7 +112,7 @@
   padding: 0 0.931rem 0 0.937rem;
 }
 .boost,
-.boostButton {
+.frameDiv {
   flex-shrink: 0;
   display: flex;
 }
@@ -126,7 +126,7 @@
   debug_commit: 1de1738;
   z-index: 1;
 }
-.boostButton {
+.frameDiv {
   width: 3.319rem;
   flex-direction: column;
   align-items: flex-end;
@@ -135,12 +135,12 @@
 }
 .frameParent,
 .mainInner,
-.menuBar {
+.menuParent {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.menuBar {
+.menuParent {
   align-self: stretch;
   border-radius: 65px;
   background-color: rgba(107, 107, 107, 0.3);
