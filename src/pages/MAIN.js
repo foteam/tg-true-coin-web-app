@@ -3,12 +3,15 @@ import FrameComponent from "../components/FrameComponent";
 import styles from "./MAIN.module.css";
 
 const MAIN = () => {
+    const onMining = () => {
+        document.getElementById("coinsCount").innerText = "MINING!";
+    }
   return (
     <div className={styles.main}>
       <FrameComponent1 />
       <section className={styles.mainInner}>
         <div className={styles.frameParent}>
-          <img className={styles.frameChild} alt="" src="/group-1.svg" />
+          <img className={styles.frameChild}  alt="" src="/group-1.svg" onClick={onMining}/>
           <b className={styles.t}>T</b>
         </div>
       </section>
