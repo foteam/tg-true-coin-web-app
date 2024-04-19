@@ -10,9 +10,9 @@ const MAIN = () => {
   return (
     <div className={styles.main}>
       <MainHeader />
-      <section className={styles.mainInner}>
+      <section className={styles.mainInner} onClick={onMining}>
         <div className={styles.frameParent}>
-          <img onClick={onMining} className={styles.frameChild}  alt="" src="/group-1.svg"/>
+          <img className={styles.frameChild}  alt="" src="/group-1.svg"/>
           <b className={styles.t}>T</b>
         </div>
       </section>
