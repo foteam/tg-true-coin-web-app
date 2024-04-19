@@ -15,7 +15,7 @@ const MainHeader = () => {
         <div className={styles.minesWrapper}>
           <div className={styles.mines}>Your True Coins here:</div>
         </div>
-        <div className={styles.mines1} id="coinsCount">2 500</div>
+        <div className={styles.mines1} id="coinsCount">2500</div>
       </div>
     </section>
   );
