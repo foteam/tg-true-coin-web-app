@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+    redirect
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
@@ -14,7 +15,14 @@ function App() {
   const pathname = location.pathname;
 
   //CHECKING MOBILE
-  const isMobile = /Mobi/.test(window.navigator.userAgent);
+  const isMobile = /iphone|ipad|ipod|android/g.test(window.navigator.userAgent.toLowerCase());
+  if (!isMobile){
+    redirect('/desktop')
+  } else {
+    redirect('/mobile')
+  }
+
+
 
   useEffect(() => {
     if (action !== "POP") {
@@ -50,11 +58,8 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" >
-            {isMobile ? (redirect("main")) : (redirect("desktop"))}
-            <Route path="/main" element={<Main/>}/>
-            <Route path="/desktop" component={DesktopPage}/>
-          </Route>
+          <Route path="/main" element={<Main/>}/>
+          <Route path="/desktop" component={DesktopPage}/>
         </Routes>
       </Router>
   );
