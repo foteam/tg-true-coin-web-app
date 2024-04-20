@@ -1,4 +1,4 @@
-import styles from "./FrameComponent1.module.css";
+import styles from "./mainheader.module.css";
 import React from "react"
 
 const MainHeader = () => {

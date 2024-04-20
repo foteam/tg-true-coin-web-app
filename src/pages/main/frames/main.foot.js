@@ -1,4 +1,4 @@
-import styles from "./FrameComponent.module.css";
+import styles from "./mainfoot.module.css";
 
 const MainHeader = () => {
 

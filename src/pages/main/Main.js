@@ -1,12 +1,12 @@
-import MainHeader from "../components/MainHeader";
-import MainFoot from "../components/MainFoot";
-import styles from "./MAIN.module.css";
+import MainHeader from "./frames/main.header";
+import MainFoot from "./frames/main.foot";
+import styles from "./main.module.css";
 
 const onMining = () => {
     document.getElementById("coinsCount").innerText = parseInt(document.getElementById("coinsCount").innerHTML) + 1;
 }
 
-const MAIN = () => {
+const Main = () => {
   return (
     <div className={styles.main}>
       <MainHeader />
@@ -21,4 +21,4 @@ const MAIN = () => {
   );
 };
 
-export default MAIN;
+export default Main;
