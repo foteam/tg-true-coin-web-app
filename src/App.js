@@ -53,8 +53,8 @@ function App() {
       <Route path="/" >
         {isMobile ? (redirect("/main")) : (redirect("/desktop"))}
       </Route>
-      <Route path"/main" element={<Main/>}/>
-      <Route path"/desktop" component={DesktopPage}/>
+      <Route path="/main" element={<Main/>}/>
+      <Route path="/desktop" component={DesktopPage}/>
     </Routes>
   );
 }
