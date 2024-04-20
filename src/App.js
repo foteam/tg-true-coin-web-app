@@ -6,7 +6,6 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 import Main from "./pages/main/Main";
 
@@ -48,12 +47,7 @@ function App() {
 
   return (
       <Routes>
-        {/*<Route path="/" element={<Main />} />*/}
-        <Route path="/">
-          {isMobile ? (<Navigate to="/mobile" />) : (<Navigate to="/desktop"/>)}
-        </Route>
-        <Route path="/mobile" element={<h1>is Mobile</h1>}/>
-        <Route path="/desktop" element={<h1>is Desktop</h1>}/>
+        <Route path="/" element={<Main />} />
       </Routes>
   );
 }
