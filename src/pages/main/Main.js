@@ -16,7 +16,7 @@ const Main = () => {
                     <img className={styles.iconSoFaq} alt="" src="/-icon-so-faq.svg"/>
                     <div className={styles.mines} id="coinsCount">0</div>
                     <div className={styles.mines1}>Your True Coins here:</div>
-                    <div className={styles.groupParent}>
+                    <div className={styles.groupParent} onClick={onMining}>
                         <img className={styles.groupChild} alt="" src="/group-1.svg"/>
                         <b className={styles.t}>T</b>
                     </div>
