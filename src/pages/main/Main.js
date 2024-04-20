@@ -21,7 +21,7 @@ const Main = () => {
                   <MainFoot />
               </div>
           </MobileView>
-          <BrowserView><h1>Desktop variant not supported!</h1></BrowserView>
+          <BrowserView><h1 style={}>Desktop variant not supported!</h1></BrowserView>
           </>
   );
 };
