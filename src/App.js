@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import {
   Routes,
+    Navigate,
   Route,
   useNavigationType,
   useLocation,
@@ -51,7 +52,12 @@ function App() {
 
   return (
       <Routes>
-        <Route path="/" element={<Main />} />
+        {/*<Route path="/" element={<Main />} />*/}
+        <Route path="/">
+          {isMobile ? (<Navigate to="/mobile" />) : (<Navigate to="/desktop"/>)}
+        </Route>
+        <Route path="/mobile" element={<h1>is Mobile</h1>}/>
+        <Route path="/desktop" element={<h1>is Desktop</h1>}/>
       </Routes>
   );
 }
