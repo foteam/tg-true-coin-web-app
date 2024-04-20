@@ -15,10 +15,8 @@ function App() {
   const location = useLocation();
   const pathname = location.pathname;
   useEffect(() => {
+    tg.setHeaderColor('#ff000000')
     tg.expand();
-  })
-  useEffect(() => {
-    tg.setHeaderColor("#ff000000")
   })
   useEffect(() => {
     if (action !== "POP") {
