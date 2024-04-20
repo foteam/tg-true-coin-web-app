@@ -50,15 +50,9 @@ function App() {
   }, [pathname]);
 
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Main />}>
-            {/*{isMobile ? (<Navigate to="/main" />) : (<Navigate to="/desktop" />)}
-            <Route path="/main" element={<Main/>}/>
-            <Route path="/desktop" component={DesktopPage}/>*/}
-          </Route>
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
   );
 }
 function DesktopPage() {
