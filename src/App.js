@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
-    redirect
+  Navigate
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
@@ -53,10 +52,10 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" >
-            {isMobile ? (<Navigate to="/main" />) : (<Navigate to="/desktop" />)}
+          <Route path="/" element={<Main />}>
+            {/*{isMobile ? (<Navigate to="/main" />) : (<Navigate to="/desktop" />)}
             <Route path="/main" element={<Main/>}/>
-            <Route path="/desktop" component={DesktopPage}/>
+            <Route path="/desktop" component={DesktopPage}/>*/}
           </Route>
         </Routes>
       </Router>
