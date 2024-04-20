@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import {
+  BrowserRouter as Router,
   Routes,
   Route,
-    redirect,
-  useNavigationType,
-  useLocation
+  Navigate,
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
@@ -49,13 +48,15 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" >
-        {isMobile ? (redirect("main")) : (redirect("desktop"))}
-        <Route path="main" element={<Main/>}/>
-        <Route path="desktop" component={DesktopPage}/>
-      </Route>
-    </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" >
+            {isMobile ? (redirect("main")) : (redirect("desktop"))}
+            <Route path="main" element={<Main/>}/>
+            <Route path="desktop" component={DesktopPage}/>
+          </Route>
+        </Routes>
+      </Router>
   );
 }
 function DesktopPage() {
