@@ -16,11 +16,6 @@ function App() {
 
   //CHECKING MOBILE
   const isMobile = /iphone|ipad|ipod|android/g.test(window.navigator.userAgent.toLowerCase());
-  if (!isMobile){
-    redirect('/desktop')
-  } else {
-    redirect('/mobile')
-  }
 
 
 
@@ -58,8 +53,11 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/main" element={<Main/>}/>
-          <Route path="/desktop" component={DesktopPage}/>
+          <Route path="/" >
+            {isMobile ? (redirect("/main")) : (redirect("/desktop"))}
+            <Route path="/main" element={<Main/>}/>
+            <Route path="/desktop" component={DesktopPage}/>
+          </Route>
         </Routes>
       </Router>
   );
