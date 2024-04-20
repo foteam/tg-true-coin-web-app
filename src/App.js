@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import {
   Routes,
   Route,
+    redirect,
   useNavigationType,
-  useLocation,
+  useLocation
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
@@ -12,6 +13,10 @@ function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+
+  //CHECKING MOBILE
+  const isMobile = /Mobi/.test(window.navigator.userAgent);
+
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
@@ -45,8 +50,15 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
+      <Route path="/" >
+        {isMobile ? (redirect("/main")) : (redirect("/desktop"))}
+      </Route>
+      <Route path"/main" element={<Main/>}/>
+      <Route path"/desktop" component={DesktopPage}/>
     </Routes>
   );
+}
+function DesktopPage() {
+  return <h1>Desktop not supported!</h1>
 }
 export default App;
