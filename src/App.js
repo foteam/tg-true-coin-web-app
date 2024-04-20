@@ -54,7 +54,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" >
-            {isMobile ? (redirect("/main")) : (redirect("/desktop"))}
+            {isMobile ? (<Navigate to="/main" />) : (<Navigate to="/desktop" />)}
             <Route path="/main" element={<Main/>}/>
             <Route path="/desktop" component={DesktopPage}/>
           </Route>
