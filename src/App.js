@@ -16,6 +16,8 @@ function App() {
   const pathname = location.pathname;
   useEffect(() => {
     tg.expand();
+  })
+  useEffect(() => {
     tg.setHeaderColor("FF000000")
   })
   useEffect(() => {
