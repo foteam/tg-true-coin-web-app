@@ -8,12 +8,15 @@ import {
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
+const tg = window.Telegram.WebApp;
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
-
+  useEffect(() => {
+    tg.expand();
+  })
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
