@@ -19,29 +19,34 @@ function MiningCoins() {
     };
 
     document.getElementById("coinsCount").innerText = parseInt(document.getElementById("coinsCount").innerHTML) + 1;
-    return
+    return (
+        <div
+            style={{ width: '100vw', height: '100vh', position: 'relative' }}
+            onTouchMove={handleTouchMove}
+        >
+            {touches.map((touch, index) => (
+                <div
+                    key={index}
+                    style={{
+                        position: 'absolute',
+                        left: touch.x,
+                        top: touch.y,
+                        fontSize: '16px',
+                    }}
+                >
+                    Текст
+                </div>
+            ))}
+        </div>
+    );
 }
 
 const Main = () => {
     const tg = window.Telegram.WebApp;
+
     return (
         <>
             <MobileView>
-                <div style={{ width: '100vw', height: '100vh', position: 'relative' }} onTouchMove={handleTouchMove}>
-                    {touches.map((touch, index) => (
-                        <div
-                            key={index}
-                            style={{
-                                position: 'absolute',
-                                left: touch.x,
-                                top: touch.y,
-                                fontSize: '16px',
-                            }}
-                        >
-                            +1
-                        </div>
-                    ))}
-                </div>
                 <div className={styles.main}>
                     <b className={styles.profile}>👤 {tg.initDataUnsafe?.user?.first_name}</b>
                     <img className={styles.iconSoFaq} alt="" src="/-icon-so-faq.svg"/>
