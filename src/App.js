@@ -18,7 +18,7 @@ function App() {
     tg.expand();
   })
   useEffect(() => {
-    tg.setHeaderColor("FF000000")
+    tg.setHeaderColor("#ff000000")
   })
   useEffect(() => {
     if (action !== "POP") {
