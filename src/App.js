@@ -54,7 +54,4 @@ function App() {
       </Routes>
   );
 }
-function DesktopPage() {
-  return <h1>Desktop not supported!</h1>
-}
 export default App;
