@@ -1,7 +1,7 @@
 
 import styles from "./main.module.css";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
+import React, { useState } from 'react';
 function MiningCoins() {
     const [touches, setTouches] = useState([]);
 
