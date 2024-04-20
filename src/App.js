@@ -6,6 +6,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 import Main from "./pages/main/Main";
 
@@ -13,11 +14,6 @@ function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
-
-  //CHECKING MOBILE
-  const isMobile = /iphone|ipad|ipod|android/g.test(window.navigator.userAgent.toLowerCase());
-
-
 
   useEffect(() => {
     if (action !== "POP") {
