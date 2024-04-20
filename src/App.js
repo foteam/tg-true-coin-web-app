@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  useNavigationType,
+  useLocation,
 } from "react-router-dom";
 
 import Main from "./pages/main/Main";
