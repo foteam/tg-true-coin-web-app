@@ -15,9 +15,8 @@ function App() {
   const location = useLocation();
   const pathname = location.pathname;
   useEffect(() => {
-    tg.setHeaderColor('#ff000000')
     tg.expand();
-  })
+  }, [])
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
